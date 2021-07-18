@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="" content="">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+  <section>
+    <div>
+      <h4>Calculator</h4>
+      <p><span class="j">jawan </span> <span class="p"> Pakistan </span>
+      </p>
+    </div>
+    <form action="" name="cal" method="get" accept-charset="utf-8">
+      <input type="text" name="display" class="text1" id="screen" value="" disabled />
+      <input type="text" name="answer" class="text2" id="answer" value="" disabled />
+      <div>
+        <input type="button" name="ac" id="ac" value="AC" onclick="clean()" />
+        <input type="button" name="c" id="c" value="C" onclick="backspace()"  />
+        <input type="button" name="2" id="2" value="%" onclick="calculator('%')" />
+        <input type="button" name="3" id="3" value="/"onclick="calculator('/')" />
+      </div>
+      <div>
+        <input type="button" name="1" id="1" value="1" onclick="calculator('1')" />
+        <input type="button" name="2" id="2" value="2" onclick="calculator('2')" />
+        <input type="button" name="3" id="3" value="3"onclick="calculator('3')" />
+        <input type="button" name="/" id="/" value="*" onclick="calculator('*')"  />
+      </div>
+      <div>
+
+        <input type="button" name="4" id="4" value="4" onclick="calculator('4')"/>
+        <input type="button" name="5" id="5" value="5" onclick="calculator('5')"/>
+        <input type="button" name="6" id="6" value="6" onclick="calculator('6')" />
+        <input type="button" name="sub" id="sub" value="-" onclick="calculator('-')"   />
+      </div>
+      <div>
+        <input type="button" name="7" id="7" value="7" onclick="calculator('7')" />
+        <input type="button" name="8" id="8" value="8" onclick="calculator('8')" />
+        <input type="button" name="9" id="9" value="9" onclick="calculator('9')"/>
+        <input type="button" name="-" id="add" value="+" onclick="calculator('+')"/>
+      </div>
+      <div>
+        <input type="button" name="00" id="00" value="00" onclick="calculator('00')" />
+        <input type="button" name="0" id="" value="0" onclick="calculator('0')"/>
+        <input type="button" name="=" id="" value="." onclick="calculator('.')" />
+        <input type="button" name="+" id="" value="=" onclick="total()"  />
+      </div>
+    </form>
+    <p class="pak">* A Project of Jawan Pakistan *</p>
+  </section>
+</body>
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
+</html>
